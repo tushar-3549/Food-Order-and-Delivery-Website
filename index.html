@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Food Ordering and Delivery Website</title>
+</head>
+
+<body>
+    <header>
+        <h1>Food Ordering and Delivery Website</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Cart</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Menu</h2>
+            <ul>
+                <li>
+                    <h3>Burger</h3>
+                    <p>Description of the burger.</p>
+                    <p>Price: $10</p>
+                    <form>
+                        <label for="burger-quantity">Quantity:</label>
+                        <input type="number" id="burger-quantity" name="burger-quantity" min="1" max="10" value="1">
+                        <button type="submit">Add to Cart</button>
+
+
+                    </form>
+                </li>
+                <li>
+                    <h3>Pizza</h3>
+                    <p>Description of the pizza.</p>
+                    <p>Price: $15</p>
+                    <form>
+                        <label for="pizza-quantity">Quantity:</label>
+                        <input type="number" id="pizza-quantity" name="pizza-quantity" min="1" max="10" value="1">
+                        <button type="submit">Add to Cart</button>
+                    </form>
+                </li>
+                <!-- Add more menu items here -->
+            </ul>
+        </section>
+        <section>
+            <h2>Cart</h2>
+            <ul id="cart-list">
+                <!-- Display items added to cart -->
+            </ul>
+            <form>
+                <label for="delivery-method">Delivery Method:</label>
+                <select id="delivery-method" name="delivery-method">
+                    <option value="pickup">Pickup</option>
+                    <option value="bicycle">Bi-Cycle</option>
+                    <option value="delivery">Delivery</option>
+                    <option value="delivery">Restaurant</option>
+                </select>
+                <br>
+                <label for="payment-method">Payment Method:</label>
+                <select id="payment-method" name="payment-method">
+                    <option value="credit-card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bkash">Bkash</option>
+                    <option value="bkash">Cash</option>
+                </select>
+                <br>
+                <button type="submit" id="place-btn-id">Place Order</button>
+            </form>
+
+            <div class="output">
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <!-- @ -> &commat;
+        © -> &copy; -->
+        <p>&copy; Food Ordering and Delivery Website.
+            All rights reserved by &commat; Tushar Ahmed.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

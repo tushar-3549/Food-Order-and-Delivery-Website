@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+section {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    margin: 10px;
+    padding: 10px;
+    width: 45%;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li h3 {
+    margin-bottom: 5px;
+}
+
+li p:last-of-type {
+    margin-bottom: 0;
+}
+
+form {
+    display: flex;
+    margin-top: 10px;
+}
+
+label {
+    margin-right: 5px;
+}
+
+input[type="number"] {
+    width: 50px;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #666;
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+}
+
+.output {
+    color: rgba(2, 11, 3, 0.831);
+    text-align: center;
+    font-size: 30px;
+    margin-top: 60px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    main {
+        display: block;
+    }
+
+    section {
+        width: 100%;
+    }
+}
